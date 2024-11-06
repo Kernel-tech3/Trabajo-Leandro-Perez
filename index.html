@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo de Giuliano</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: #0D0D0D;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    header ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    header li {
+        color: white;
+        list-style: none;
+        font-size: 18px;
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+    }
+
+    body {
+        background-color: #40342E;
+        color: white;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: clamp(24px, 5vw, 50px);
+    }
+
+    .social-links-header a:hover {
+        color: #40342E;
+    }
+
+    .separador {
+        height: 100px;
+        margin-top: 30px;
+        border-top: 2px solid black;
+    }
+
+    .hero {
+        min-height: 400px;
+        background-image: url(https://github.com/Kernel-tech3/Img-Kernel/blob/main/public/img/foto-hero-modificada.png?raw=true);
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero p {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .sobre-mi-section {
+        padding: 20px;
+    }
+
+    .sobre-mi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .img-sobre-mi {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .sobre-mi ul {
+        padding: 0 20px;
+    }
+
+    .sobre-mi li {
+        margin: 10px 0;
+        list-style: none;
+    }
+
+    .sobre-mi h3 {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .productos h2 {
+        text-align: center;
+        padding: 20px;
+        font-size: clamp(20px, 4vw, 30px);
+    }
+
+    .card-sep {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        width: 100%;
+        max-width: 300px;
+        transition: transform 0.2s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-title {
+        margin: 0 0 10px 0;
+        color: #333;
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        color: #666;
+        margin: 0 0 15px 0;
+        line-height: 1.5;
+    }
+
+    footer {
+        background-color: #0D0D0D;
+        color: white;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 1rem;
+        font-size: clamp(20px, 4vw, 2.5rem);
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    /* Media Queries */
+    @media (min-width: 768px) {
+        header li {
+            font-size: 25px;
+        }
+
+        .sobre-mi {
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .footer-content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .card {
+            width: calc(33.333% - 20px);
+        }
+    }
+</style>
+<body>
+    <header>
+        <div class="social-links-header">
+            <ul>
+                <li><a href="">Contacto de WhatsApp</a></li>
+                <li><a href="">Sobre Mi</a></li>
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Instagram</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article>
+        <section>
+            <div class="hero">
+                <h1>Bienvenido a mi Pagina web</h1>
+                <p>Las mejores formas de seguir el mercado</p>
+            </div>
+        </section>
+
+        <section class="sobre-mi-section">
+            <h2>Sobre Nosotros</h2>
+            <p>Hola me llamo Lenadro Perez. Tengo 30 años, soy contador y corredor de bolsa, a lo que me dedico en pocas palabras es a la administración de portafolios virtuales.</p>
+            <div class="sobre-mi">
+                <img class="img-sobre-mi" src="https://github.com/Kernel-tech3/Img-Kernel/blob/main/public/img/persona.jpg?raw=true" alt="">
+                <div>
+                    <ul>
+                        <h3>Distintos beneficios que vas a tener al trabajar con Nosotros:</h3>
+                        <li>✓Tu portafolio va a estar controlado 24 horas.</li>
+                        <li>✓Vas a realizar una serie de preguntas en las cuales me vas a indicar que tipo de perfil de inversor tenes(seguro,arriesgado,etc).</li>
+                        <li>✓La tarifa que se va a cobrar va a depender de la ganancia que tengas.</li>
+                        <li>✓Vas a poder operar en cedear,forex,bonos,letras,criptomonedas y mucho mas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="separador"></div>
+
+        <section class="productos-section">
+            <div class="productos">
+                <h2>En lo que voy a operar</h2>
+            </div>
+            <div class="card-sep">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1630569873238-ab46aa254937?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descripción de la imagen">
+                    <div class="card-content">
+                        <h2 class="card-title">Criptomonedas</h2>
+                        <p class="card-text">Una criptomoneda ​ es un medio digital de intercambio que utiliza criptografía fuerte para asegurar las transacciones, controlar la creación de unidades adicionales y verificar la transferencia de activos usando tecnologías de registro distribuido</p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1630569873238-ab46aa254937?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3DD" alt="Descripción de la imagen">
+                    <div class="card-content">
+                        <h2 class="card-title">Cedears</h2>
+                        <p class="card-text">Los Certificados de Depósito Argentinos son instrumentos de renta variable que cotizan en la Bolsa de Comercio de Buenos Aires y representan acciones que no tienen oferta pública ni cotización en el mercado argentino, sino en una bolsa de otro país</p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1630569873238-ab46aa254937?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descripción de la imagen">
+                    <div class="card-content">
+                        <h2 class="card-title">Bonos</h2>
+                        <p class="card-text">Los bonos son valores de deuda utilizados tanto por entidades privadas como por entidades de gobierno. Es una de las formas de materializar los títulos de deuda, de renta fija o variable. Pueden ser emitidos por una institución pública o por una institución privada.</p>
+                        
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1630569873238-ab46aa254937?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descripción de la imagen">
+                    <div class="card-content">
+                        <h2 class="card-title">Letras</h2>
+                        <p class="card-text">Las letras del Tesoro son instrumentos de corto plazo que emite el Tesoro Nacional con el objetivo de conseguir financiamiento. Existen diferentes letras determinadas según el tipo de tasa; fija, variable o ajustada por Coeficiente de Estabilización de Referencia (CER) y por tipo de moneda; local o extranjera..</p>
+                        
+                    </div>
+            </div>
+        </section>
+
+        <div class="separador"></div>
+
+        <section class="productos-section">
+            <div class="productos">
+                <h2>Brokers en los que voy a operar</h2>
+            </div>
+            <div class="card-sep">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAXuZIfVTgzi1NVN2vXanMdEXmO_SmV3H5xw&s" alt="Descripción de la imagen">
+                    <div class="card-content">
+                        <h2 class="card-title">Bull Market</h2>
+                        
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://pbs.twimg.com/profile_images/1786055066857660416/-SCczK1I_400x400.jpg" alt="Descripción de la imagen">
+                    <div class="card-content">
+                        <h2 class="card-title">Invertir online</h2>
+                        
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <img src="https://yt3.googleusercontent.com/4nw0CnJe5nbZmVPgD4EelEqGwway7jFiRF6xZzTKWY_MEUkyL4-BeXmImzTvZjMJXheTkWnQqQ=s900-c-k-c0x00ffffff-no-rj" alt="Descripción de la imagen">
+                    <div class="card-content">
+                        <h2 class="card-title">Cocos</h2>
+                        
+                    </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📞 3541 56 7898</p>
+                    <p>📍 Cordoba, Argentina</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Email</h4>
+                    <p>📧 LenadroPerez@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociales</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </article>
+</body>
+</html>
